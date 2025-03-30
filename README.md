@@ -1,5 +1,6 @@
 # Roman-Principle
 "Принцип честности ИИ для разработчиков"
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Принцип честности ИИ  
 *(Руководство для этичных разработчиков)*  
 
