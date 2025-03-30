@@ -5,101 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Принцип честности ИИ</title>
     <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --background: #f9f9f9;
+            --text: #333;
+        }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
+            padding: 2rem;
+            background: var(--background);
+            color: var(--text);
         }
         h1 {
-            color: #2c3e50;
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
         }
-        .badges {
-            margin: 15px 0;
+        h2 {
+            color: var(--primary);
+            margin-top: 2rem;
         }
         code {
-            background: #f4f4f4;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
+            background: #f0f0f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.8rem;
         }
         a {
-            color: #3498db;
+            color: var(--secondary);
             text-decoration: none;
+            transition: all 0.2s;
         }
         a:hover {
             text-decoration: underline;
+            color: #2980b9;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 2rem 0;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 0.5rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #ecf0f1;
+                --secondary: #3498db;
+                --background: #2c3e50;
+                --text: #ecf0f1;
+            }
+            code {
+                background: #34495e;
+                color: #f8f8f2;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Принцип честности ИИ</h1>
-        <div class="badges">
+        <div style="display: flex; gap: 1rem; margin: 1rem 0;">
             <img src="https://img.shields.io/badge/Версия-1.0-blue" alt="Версия">
             <img src="https://img.shields.io/badge/Лицензия-MIT-green" alt="Лицензия">
         </div>
     </header>
 
-    <section>
-        <h2>📜 Основные правила</h2>
-        <ol>
-            <li><strong>Никакого скрытого антропоморфизма</strong><br>
-                <code># Не "Я рад", а "Система определяет позитивный тон"</code>
-            </li>
-            <li><strong>Прозрачность алгоритмов</strong><br>
-                Всегда указывайте версию системы и метод анализа
-            </li>
-            <li><strong>Юмор с пояснениями</strong><br>
-                <code>"Виляю хвостом (протокол DOG_EMOTION_12)"</code>
-            </li>
-        </ol>
-    </section>
-<footer>
-  <h3>📌 Полезные ссылки</h3>
-  <ul>
-    <!-- Основные файлы -->
-    <li>
-      <a href="https://github.com/RomanKlRus/Roman-Principle/blob/main/README.md" target="_blank" rel="noopener">
-        📚 Полная документация (GitHub)
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/RomanKlRus/Roman-Principle/blob/main/DISCLAIMER.md" target="_blank" rel="noopener">
-        ⚠️ Дисклеймер
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/RomanKlRus/Roman-Principle/blob/main/LICENSE.md" target="_blank" rel="noopener">
-        📜 Лицензия MIT
-      </a>
-    </li>
+    <main>
+        <section>
+            <h2>📜 Основные правила</h2>
+            <ol>
+                <li><strong>Никакого скрытого антропоморфизма</strong><br>
+                    <code># Не "Я рад", а "Система определяет позитивный тон"</code>
+                </li>
+                <li><strong>Прозрачность алгоритмов</strong><br>
+                    Всегда указывайте версию системы и метод анализа
+                </li>
+                <li><strong>Юмор с пояснениями</strong><br>
+                    <code>"Виляю хвостом (протокол DOG_EMOTION_12)"</code>
+                </li>
+            </ol>
+        </section>
 
-    <!-- Примеры кода -->
-    <li>
-      <a href="https://raw.githubusercontent.com/RomanKlRus/Roman-Principle/main/examples/bot.py" target="_blank" rel="noopener">
-        🤖 Чат-бот на Python
-      </a>
-    </li>
-    <li>
-      <a href="https://raw.githubusercontent.com/RomanKlRus/Roman-Principle/main/examples/robot.py" target="_blank" rel="noopener">
-        🦾 Робот с эмоциями
-      </a>
-    </li>
+        <hr>
 
-    <!-- Ссылка на сам сайт -->
-    <li>
-      <a href="https://romanklrus.github.io/Roman-Principle/">
-        🏠 Главная страница
-      </a>
-    </li>
-  </ul>
-</footer>
+        <section>
+            <h2>🔗 Полезные ссылки</h2>
+            <ul>
+                <li><span class="emoji">📄</span> <a href="https://github.com/RomanKlRus/Roman-Principle/blob/main/README.md" target="_blank" rel="noopener">Полная документация</a></li>
+                <li><span class="emoji">⚠️</span> <a href="https://github.com/RomanKlRus/Roman-Principle/blob/main/DISCLAIMER.md" target="_blank" rel="noopener">Дисклеймер</a></li>
+                <li><span class="emoji">📜</span> <a href="https://github.com/RomanKlRus/Roman-Principle/blob/main/LICENSE.md" target="_blank" rel="noopener">Лицензия MIT</a></li>
+                <li><span class="emoji">🤖</span> <a href="https://raw.githubusercontent.com/RomanKlRus/Roman-Principle/main/examples/bot.py" target="_blank" rel="noopener">Чат-бот на Python</a></li>
+                <li><span class="emoji">🦾</span> <a href="https://raw.githubusercontent.com/RomanKlRus/Roman-Principle/main/examples/robot.py" target="_blank" rel="noopener">Робот с эмоциями</a></li>
+                <li><span class="emoji">🏠</span> <a href="https://romanklrus.github.io/Roman-Principle/">Главная страница</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="margin-top: 3rem; font-size: 0.9em; color: #777;">
+        <p>Проект "Принцип честности ИИ" © 2025</p>
+    </footer>
 </body>
 </html>
